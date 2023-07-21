@@ -6,5 +6,5 @@ def fix_spelling(sentence):
  for i in u:
   corrected+=[spell.correction(i)]
  sentence.text=' '.join(u)
- print(sentence.text)
+# print(sentence.text)
  return sentence
