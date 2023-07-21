@@ -4,7 +4,6 @@ from chatterbot.logic import LogicAdapter
 class MyLogicAdapter(LogicAdapter):
     def __init__(self, chatbot, **kwargs):
         super().__init__(chatbot, **kwargs)
-        print(kwargs.get('age'))
 
     def can_process(self, statement):
         #print(dir(statement))
@@ -13,9 +12,9 @@ class MyLogicAdapter(LogicAdapter):
         #print(self.chatbot.age)
         #print(dir(self))
         #print(statement.search_text)
-        print(dir(statement))
-        print(statement.get_tags())
-        print(type(statement))
+        #print(dir(statement))
+        #print(statement.get_tags())
+        #print(type(statement))
         return True
 
     def process(self, input_statement, additional_response_selection_parameters):
